@@ -105,3 +105,5 @@ Feature engineering significantly impacts model accuracy.
 Random Forest models outperform linear/logistic models in both regression and classification.
 
 Profitability is strongly linked to discount, cost, and shipping variables.
+
+Thanks...

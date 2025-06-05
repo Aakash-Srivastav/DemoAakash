@@ -152,4 +152,19 @@ def log_reg():
 
     class_eval(model=model_name, y_pred=y_pred_new)
 
+def random_forest_class():
+
+    model_name = "Random Forest Classification"
+    model = RandomForestClassifier(n_estimators=10, random_state=0)
+    model.fit(x_train_new, y_train_new)
+
+    # Predict on test  set
+    y_pred_new = model.predict(x_test_new)
+
+    class_eval(model=model_name, y_pred=y_pred_new)
+
+    imp_feature(model=model)
+
 log_reg()
+
+random_forest_class()
