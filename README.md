@@ -42,7 +42,7 @@ Linear Regression
 
 Random Forest Regression
 
-Evaluation Metrics:
+### Evaluation Metrics:
 
 R² Score
 
@@ -56,7 +56,7 @@ Logistic Regression
 
 Random Forest Classifier
 
-Evaluation Metrics:
+### Evaluation Metrics:
 
 Accuracy
 

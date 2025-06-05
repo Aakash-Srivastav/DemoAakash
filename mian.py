@@ -47,7 +47,7 @@ X = data.drop(columns=["Transaction_ID","A_Date_ID","A_Date_ID","A_Date","A_Date
 y = data[["Profit_Margin"]]
 
 # Split into training and testing
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=10)
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=100)
 
 def reg_eval(model, y_pred):
     # Calculate R2 score
@@ -154,7 +154,7 @@ def log_reg():
 
 def random_forest_class():
 
-    model_name = "Random Forest Classification"
+    model_name = "Random forest classification"
     model = RandomForestClassifier(n_estimators=10, random_state=0)
     model.fit(x_train_new, y_train_new)
 
